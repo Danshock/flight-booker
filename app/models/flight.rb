@@ -2,7 +2,10 @@ class Flight < ApplicationRecord
 	belongs_to :departure_airport, class_name: "Airport"
 	belongs_to :destination_airport, class_name: "Airport"
 
-	# Include validations
+	validates :departure_airport_id, presence: true
+	validates :destination_airport_id, presence: true
+	validates :duration, presence: true
+	validates :departure_date, presence: true
 
 	def self.date_list
 		dates = Flight.all.order(departure_date: :asc)
