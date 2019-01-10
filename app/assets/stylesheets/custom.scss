@@ -6,58 +6,157 @@
 }
 
 body {
-	font-family: "Lato", Helvertica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
+
 /*
-   New Booking Page
-*/
-
-.search{
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.search-results{
-	margin-bottom: 50px;
-}
-
-h3{
-	border-bottom: 1px solid #000;
-	line-height: 1.5em;
-	margin-top: 0;
-	margin-bottom: 30px;
-}
-
-/* 
-  Header
+			Header
 */
 
 .logo {
 	font-size: 40px;
 	padding: 25px 15px;
 	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -1px;
 }
 
 .navbar-default {
-    background-color: #00446E;
+	background-color: #337AB7;
 	height: 75px;
 	border-radius: 0;
 	border: 0;
 }
 
 .navbar-brand.logo {
-	color: #FFF;
+	color: #fff;
 	transform: translateX(-50%);
 	left: 50%;
 	position: absolute;
 }
 
-.nabar-brand.logo:hover {
-	color: #E3E3E3;
+.navbar-brand.logo:hover {
+	color: #F2F2F2;
 }
 
 .rm-p {
-	padding-left: 0 !important;
+	padding-left: 0!important;
+}
+
+
+/*
+			 New Booking Page
+*/
+
+.search {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.search-results {
+	margin-bottom: 50px;
+}
+
+h3 {
+	border-bottom: 1px solid #000;
+	line-height: 1.5em;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+/* passenger details page */
+
+.passenger_details {
+	margin-bottom: 50px;
+}
+
+.form-group {
+	padding-right: 0;
+}
+
+.flight-details {
+}
+
+/*
+			New Booking Page
+*/
+
+.passenger-box {
+	padding-bottom: 40px;
+}
+
+.control-label {
+	text-align: left;
+}
+
+/*
+			Show Booking Page
+*/
+
+h1 {
+	text-align: center;
+}
+
+.booking {
+	margin-bottom: 10%;
+}
+
+
+/*
+ 			Footer
+*/
+
+html {
+	position: relative;
+	min-height: 100%;
+	
+}
+
+body {
+	margin-bottom: 70px;
+	
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background-color: #F2F2F2;
+}
+
+.copy{
+	margin-top: 35px;
+	color: #F2F2F2;
+}
+
+.contact ul li {
+	display: inline-block;
+	font-size: 25px;
+	padding-right: 10px;
+	color: black;
+}
+
+.contact ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.contact h4 {
+	margin-bottom: 0;
+}
+
+.contact, .contact ul li a {
+	color: black;
+}
+
+.contact ul li a:hover {
+	color:#2980B9;
+}
+
+#error_explanation {
+	color: red;
 }
