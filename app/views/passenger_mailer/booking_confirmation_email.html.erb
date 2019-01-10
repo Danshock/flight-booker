@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h2>Your flight has been booked.</h2>
+    <h4>Your Booking ID is <%= @passenger.bookings.last.flight_id %> <br />
+    	Departure from <%= @from_location %> <br/>
+    	Flying to <%= @to_location %> <br/>
+    	On <%= @date %>
+    </h4>
+    <p><%= @passenger.name.capitalize %>, it's time to get excited about your trip to <%= @to_location %>.<br />
+    Remember, you can check in online anytime from 30 days to 2 hours before your flight.</p>
+    <p>Thank you for choosing us!</p>
+  </body>
+</html>
