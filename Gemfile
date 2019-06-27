@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.5'
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker', '~> 1.4.3'
 # Bootstrap
-gem 'bootstrap-sass', '~> 3.3.4'
+gem "bootstrap-sass", ">= 3.4.1"
 # font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 gem 'font-awesome-rails'
 # Designmodo's Flat-UI ported to SASS
