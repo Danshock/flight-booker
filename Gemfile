@@ -22,12 +22,11 @@ gem 'jbuilder', '~> 2.5'
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker', '~> 1.4.3'
 # Bootstrap
-gem "bootstrap-sass", ">= 3.4.1"
+gem 'bootstrap-sass', '~> 3.3.4'
 # font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 gem 'font-awesome-rails'
 # Designmodo's Flat-UI ported to SASS
 gem 'flat-ui-sass', github: 'wingrunr21/flat-ui-sass'
-# Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing.
 
 
 # Reduces boot times through caching; required in config/boot.rb
@@ -37,7 +36,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'database_cleaner'
 end
 
 
@@ -58,6 +56,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  # Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing.
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
