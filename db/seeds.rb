@@ -1,6 +1,8 @@
 require 'database_cleaner'
 # Every time rails db:seed is ran, DatabaseCleaner will clear the excisting database without affecting the database schema.
 DatabaseCleaner.clean_with(:truncation)
+DatabaseCleaner.allow_production = true
+DatabaseCleaner.allow_remote_database_url = true
 
 # Empty Array for dates.
 dates = []
